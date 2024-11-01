@@ -18,7 +18,7 @@ app.use(session({
 }));
 
 // MongoDB connection
-mongoose.connect('mongodb://localhost:27017/Venus', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://gowthamjayaram333:gowtham2003@cluster0.addyv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection;
 db.once('open', () => {
     console.log("Mongodb Connection Successful");
