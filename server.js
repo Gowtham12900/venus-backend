@@ -5,6 +5,10 @@ const path = require('path');
 const multer = require('multer');
 const port = 1917;
 const app = express();
+const cors  = require("cors");
+
+
+app.use(cors());
 
 app.use(express.static(__dirname)); 
 app.use(express.urlencoded({ extended: true }));
